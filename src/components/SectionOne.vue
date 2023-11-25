@@ -15,7 +15,6 @@
         <img :src="person" alt="" class="person" />
         <img :src="circle" alt="" class="circle" />
         <img :src="sec1" alt="" class="sec1" />
-        <img src="" alt="" />
       </div>
     </div>
   </div>
