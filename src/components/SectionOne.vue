@@ -4,7 +4,7 @@
       <div class="text">
         <h1>
           Hi ,I am Abdenour,<br />
-          Front-end developer .
+          Front-end developer
         </h1>
         <p>
           i can create and design <br />
@@ -46,18 +46,27 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 550px;
-    margin: 50px 0;
+    margin: 75px 0;
   }
   .section-img .sec1 {
     display: none;
   }
+  .section-img {
+    margin-left: 45px;
+  }
   .section-img .person {
     position: static;
-    width: 350px;
+    width: 330px;
     margin-left: 75px;
   }
   .text {
     text-align: center;
+  }
+  .text h1 {
+    font-size: 30px;
+  }
+  .circle {
+    display: block;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -67,7 +76,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 550px;
-    margin: 50px 0;
+    margin: 75px 0;
   }
   .section-img .sec1 {
     display: none;
@@ -77,8 +86,17 @@ export default {
     width: 350px;
     margin-left: 75px;
   }
+  .section-img {
+    margin-left: 45px;
+  }
   .text {
     text-align: center;
+  }
+  .text h1 {
+    font-size: 38px;
+  }
+  .circle {
+    display: block;
   }
 }
 
@@ -90,7 +108,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 550px;
-    margin: 50px 0;
+    margin: 75px 0;
   }
   .section-img .sec1 {
     display: none;
@@ -100,9 +118,18 @@ export default {
     width: 350px;
     margin-left: 75px;
   }
+  .section-img {
+    margin-left: 45px;
+  }
 
   .text {
     text-align: center;
+  }
+  .text h1 {
+    font-size: 38px;
+  }
+  .circle {
+    display: block;
   }
 }
 
@@ -123,6 +150,12 @@ export default {
     right: 30px;
     width: 400px;
   }
+  .text h1 {
+    font-size: 38px;
+  }
+  .circle {
+    display: none;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -142,6 +175,12 @@ export default {
   .section-img .sec1 {
     height: 750px;
   }
+  .circle {
+    display: none;
+  }
+  .text h1 {
+    font-size: 38px;
+  }
 }
 
 .text {
@@ -151,7 +190,6 @@ export default {
   color: var(--mine-color);
 }
 .text h1 {
-  font-size: 38px;
   font-weight: bold;
 }
 .text p {
@@ -169,10 +207,11 @@ export default {
   z-index: -1;
   width: 333px;
   margin-left: 47px;
-  color: var(--background-color);
+  filter: var(--background-color-svg);
 }
 .section-img .sec1 {
   position: absolute;
+  filter: var(--background-color-svg);
   top: 0;
   right: 0;
   z-index: -1;

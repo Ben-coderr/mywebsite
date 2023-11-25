@@ -15,7 +15,7 @@
     </div>
     <div class="navbar">
       <div>
-        <a href="#"><img :src="logo" alt="" /></a>
+        <a href="#"><img :src="logo" alt="" class="logoStyle" /></a>
       </div>
       <ul v-if="!mobileView">
         <li><a href="">About</a></li>
@@ -25,7 +25,11 @@
       <div class="third-div">
         <button class="contact">Contact</button>
         <button class="theme-change">
-          <font-awesome-icon icon="fa-solid fa-moon" class="change-buttons" />
+          <font-awesome-icon
+            icon="fa-solid fa-moon"
+            class="change-buttons"
+            @click="darkTheme"
+          />
         </button>
         <button
           class="theme-change"
@@ -55,6 +59,9 @@ export default {
   methods: {
     handleView() {
       this.mobileView = window.innerWidth <= 992;
+    },
+    darkTheme() {
+      document.body.classList.toggle("dark-theme");
     },
   },
   created() {
@@ -87,12 +94,15 @@ export default {
 }
 .navMobile ul li a {
   font-size: 40px;
-  color: var(--main-back-color);
+  color: var(--mine-color);
 }
 .navMobile button {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+.logoStyle {
+  filter: var(--dark-color-svg);
 }
 .navbar {
   display: flex;
@@ -135,18 +145,18 @@ a {
   gap: 15px;
 }
 .contact {
-  background-color: var(--main-back-color);
+  background-color: var(--mine-color);
   padding: 10px 20px;
   font-weight: 600;
-  color: var(--mine-color);
+  color: var(--main-back-color);
   font-size: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.249);
   border-radius: 15px;
   transition: all 0.5s;
 }
 .contact:hover {
-  background-color: var(--sec-text-color);
-  color: #fff;
+  background-color: #5d5fef;
+  color: var(--main-back-color);
 }
 .change-buttons {
   color: var(--mine-color);
@@ -155,7 +165,7 @@ a {
   transition: all 0.5s;
 }
 .change-buttons:hover {
-  color: var(--main-back-color);
+  color: #5d5fef;
 }
 
 .theme-change {

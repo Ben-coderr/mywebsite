@@ -116,6 +116,7 @@ export default {
 .side-vector img {
   position: absolute;
   left: 0;
+  filter: var(--background-color-svg);
 }
 .skills img {
   width: 100px;

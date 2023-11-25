@@ -15,18 +15,22 @@
     --mine-color: #21243d;
     --secondary-color: #333;
     --background-color: #ff9900;
-    --background-color-2: #FFB388;
+    --background-color-svg:  brightness(0) saturate(100%) invert(59%) sepia(95%) saturate(1559%) hue-rotate(359deg) brightness(100%) contrast(106%);
     --dark-color: #000;
+    --dark-color-svg:  invert(0%) sepia(95%) saturate(7500%) hue-rotate(20deg) brightness(86%) contrast(113%);
     --main-back-color: white;
     --card-back-color: #fafafa;
     --sec-text-color: #5d5fef;
+  
   }
   
   .dark-theme {
     --mine-color: white;
     --secondary-color: white;
     --background-color: #ffb388;
+    --background-color-svg:  brightness(0) saturate(100%) invert(81%) sepia(18%) saturate(1391%) hue-rotate(319deg) brightness(101%) contrast(101%);
     --dark-color: white;
+    --dark-color-svg: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(105%) contrast(112%);
     --main-back-color: #15181f;
     --card-back-color: #1e222b;
     --sec-text-color: white;

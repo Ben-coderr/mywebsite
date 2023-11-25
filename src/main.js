@@ -15,9 +15,10 @@ import {
   faUserSecret,
   faBarsStaggered,
   faXmark,
+  faSun,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add(faUserSecret, faMoon, faBarsStaggered, faXmark);
+library.add(faUserSecret, faMoon, faBarsStaggered, faXmark, faSun);
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

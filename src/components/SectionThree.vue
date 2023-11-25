@@ -131,6 +131,7 @@ export default {
   .side-vector img {
     width: 189px;
     display: block;
+    filter: var(--background-color-svg);
   }
 }
 /* End Global Rules */

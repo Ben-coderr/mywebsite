@@ -11,6 +11,16 @@ export default {};
 </script>
 
 <style scoped>
+@media screen and (max-width: 439px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 440px) {
+  h1 {
+    font-size: 35px;
+  }
+}
 div {
   display: flex;
   justify-content: center;
@@ -27,7 +37,6 @@ h1::after {
   left: 25%;
 }
 h1 {
-  font-size: 35px;
   color: var(--mine-color);
   position: relative;
   z-index: -1;

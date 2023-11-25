@@ -37,12 +37,58 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 419px) {
   .main-sec {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 52% 48%;
     margin-top: 100px;
-    height: 900px;
+    height: 1200px;
+  }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 80px;
+    width: 240px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+    left: 0;
+    width: 360px;
+  }
+  .description p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    text-align: justify;
+  }
+  .description h1 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 420px) and (max-width: 576px) {
+  .main-sec {
+    display: grid;
+    grid-template-rows: 52% 48%;
+    margin-top: 100px;
+    height: 1200px;
+  }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 80px;
+    width: 280px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+    left: 0;
+    width: 400px;
+  }
+  .description p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    text-align: justify;
+  }
+  .description h1 {
+    font-size: 27px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -50,7 +96,23 @@ export default {
     display: grid;
     grid-template-rows: 50% 50%;
     margin-top: 100px;
-    height: 900px;
+    height: 1350px;
+  }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 140px;
+    width: 300px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+    left: 0;
+    width: 500px;
+  }
+  .description p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 350px;
+    text-align: justify;
   }
 }
 
@@ -58,9 +120,23 @@ export default {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .main-sec {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 60% 40%;
     margin-top: 100px;
-    height: 900px;
+    height: 1500px;
+  }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 200px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+    left: 0;
+  }
+  .description p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 350px;
+    text-align: justify;
   }
 }
 
@@ -72,6 +148,22 @@ export default {
     margin-top: 100px;
     height: 900px;
   }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 150px;
+    width: 300px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+    left: 0;
+    width: 500px;
+  }
+  .description p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 350px;
+    text-align: justify;
+  }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
@@ -82,6 +174,21 @@ export default {
     margin-top: 100px;
     height: 900px;
   }
+  .sec-1 .instagrampf {
+    position: absolute;
+    left: 200px;
+  }
+  .sec-1 .section2 {
+    position: absolute;
+
+    left: 0;
+  }
+  .description p {
+    font-size: 25px;
+    font-weight: 500;
+    width: 350px;
+    text-align: justify;
+  }
 }
 .main-sec {
   display: grid;
@@ -89,6 +196,9 @@ export default {
   margin-top: 100px;
 }
 
+.sec-1 .section2 {
+  filter: var(--background-color-svg);
+}
 .sec-2 {
   display: flex;
   flex-direction: column;
@@ -103,19 +213,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--mine-color);
 }
 .description p {
-  font-size: 25px;
   font-weight: 500;
-  width: 350px;
   text-align: justify;
-}
-.sec-1 .instagrampf {
-  position: absolute;
-  left: 200px;
-}
-.sec-1 .section2 {
-  position: absolute;
-  left: 0;
 }
 </style>
