@@ -1,0 +1,99 @@
+/* Start Global Rules */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(/src/assets/fonts/TRIAL_Englisch-Bold-BF6476bfd0ab714.otf);
+  }
+  
+ 
+  :root {
+    --mine-color: #21243d;
+    --secondary-color: #333;
+    --background-color: #ff9900;
+    --background-color-2: #FFB388;
+    --dark-color: #000;
+    --main-back-color: white;
+    --card-back-color: #fafafa;
+    --sec-text-color: #5d5fef;
+  }
+  
+  .dark-theme {
+    --mine-color: white;
+    --secondary-color: white;
+    --background-color: #ffb388;
+    --dark-color: white;
+    --main-back-color: #15181f;
+    --card-back-color: #1e222b;
+    --sec-text-color: white;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Heebo", sans-serif;
+    background-color: var(--main-back-color);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+  img {
+    image-rendering: pixelated;
+  
+    /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    image-rendering: -webkit-optimize-contrast;
+  }
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+      width: 550px;
+    }
+  }
+  
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+      width: 950px;
+    }
+  }
+  
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  /* End Global Rules */
