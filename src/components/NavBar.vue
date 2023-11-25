@@ -68,7 +68,7 @@ export default {
 .navMobile {
   background-color: #ff9900;
   position: absolute;
-  z-index: 0;
+  z-index: 100;
   right: 0;
   top: 0;
   width: 100%;
@@ -84,6 +84,10 @@ export default {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+.navMobile ul li a {
+  font-size: 40px;
+  color: var(--main-back-color);
 }
 .navMobile button {
   position: absolute;
