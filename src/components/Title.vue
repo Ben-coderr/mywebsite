@@ -40,5 +40,6 @@ h1 {
   color: var(--mine-color);
   position: relative;
   z-index: -1;
+  
 }
 </style>

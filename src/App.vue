@@ -9,6 +9,7 @@
   <sectionFour />
   <Title>Latest Projects</Title>
   <sectionFive />
+  <Title>Contact Us</Title>
 </template>
 
 <script>
