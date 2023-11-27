@@ -2,10 +2,6 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import "./styles/mainj.css";
-import shadows from "vue3-box-shadows";
-const app = createApp(App);
-app.use(shadows);
-app.mount("#app");
 
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
